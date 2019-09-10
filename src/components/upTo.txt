@@ -1,0 +1,9 @@
+
+in:
+
+https://blog.bitsrc.io/building-a-todo-app-in-react-with-firebase-and-redux-ba3ab53a671b
+
+look for: 
+
+Next, we need to create another file named List.js. This file will contain a 
+form that we will use to create a new Todo

@@ -1,5 +1,17 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+# learning to use react with firebase
+Part of my self lead discovery  of implementing firebase with react 
+
+## source
+following along with a tutorial at:
+
+https://blog.bitsrc.io/building-a-todo-app-in-react-with-firebase-and-redux-ba3ab53a671b
+
+
+
+# Create React App boiler plate readme text...
 ## Available Scripts
 
 In the project directory, you can run:
