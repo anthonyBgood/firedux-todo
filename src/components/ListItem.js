@@ -1,30 +1,28 @@
-import React from 'react'
+import React, {Component} from 'react'
 import {connect} from 'react-redux'
-import {completeTodo} from  '../actions'
+import {completeToDo} from  '../actions'
 
 class ListItem extends Component {
-  
-  handleComplete = completeToDo => {
-    const {completeToDo} = this.props
-    completeTodo(completeToDo)
-  }
+
+  handleComplete = completeTodo => {
+    const {completeToDo} = this.props;
+    completeToDo(completeTodo);
+  };
 
   render() {
-    const{todoId, todo} = this.props
+    const{todoId, todo} = this.props;
     return (
-      <div key="todoName">
+      <div key="toDoName">
         <h4>
-
           {todo.title}
           <span onClick={() => this.handleComplete(todoId)}>
             <i>Done</i>
           </span>
-
+          
         </h4>
       </div>
-
-    )
+    );
   }
 }
 
-export default connect(null, {completeTodo}) (ListItem)
+export default connect(null, {completeToDo}) (ListItem)

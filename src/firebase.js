@@ -9,12 +9,13 @@ const config = {
       storageBucket: "",
       messagingSenderId: "86181431112",
       // not stipulated in the tutorial appId:
+      appId: "1:86181431112:web:d59f4b0b618f24df7ad57d"
     };
 
 // Initialize Firebase
 firebase.initializeApp(config)
 const databaseRef = firebase.database().ref()
-export const todoRef = databaseRef.child("todos")
+export const todosRef = databaseRef.child("todos")
 
 
 
