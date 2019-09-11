@@ -11,14 +11,18 @@ class List extends Component {
   };
 
   inputChange = e => {
-    this.setState({addFormValue: e.target.value})
-    console.log('here:' &  e.target.value )
+    const text = e.target.value 
+    this.setState(() => ({formValue: text}))
+
   };
 
   formSubmit = e => {
+    
+    e.preventDefault();
+    
     const {formValue} = this.state;
     const {addToDo} = this.props;
-    e.preventDefault();
+    
     addToDo({title: formValue});
     this.setState({formValue: ""});
   };
@@ -39,6 +43,7 @@ class List extends Component {
               />
               <label htmlFor="toDoNext">What Next?</label>
             </div>
+            <input type="submit" value="Submit"></input>
           </form>
         </div>
       );
@@ -61,7 +66,11 @@ class List extends Component {
     );
   }
 
-  componentWillMount() {
+//  componentWillMount() {
+//    this.props.fetchToDos();
+//  }
+
+  componentDidMount() {
     this.props.fetchToDos();
   }
   
