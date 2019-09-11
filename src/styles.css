@@ -1,0 +1,53 @@
+
+.header {
+  margin: 0;
+  color: #fd8504;
+  background-color: #100e17;
+  text-align: center;
+  padding: 2.5em 2em 0;
+      padding-right: 2em;
+      padding-left: 2em;
+      padding-bottom: 2em;
+  border-bottom: 1px solid #fd8504;
+}
+
+.content{
+
+  color: #f3efef;
+  background-color: #607a8c;
+  padding-top: 1em;
+  padding-bottom: 2em;
+
+}
+
+.add-form{
+  color: #fd8504;
+  background-color: #100e1756;
+}
+
+.button-success,
+.button-error {
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+
+    padding:0;
+    display:block;
+
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+}
+
+.button-success {
+  background: rgb(28, 184, 65); /* this is a green */
+}
+
+.button-error {
+  background: rgb(202, 60, 60); /* this is a maroon */
+}
+
+.button-small {
+  font-size: 85%;
+}

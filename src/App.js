@@ -1,11 +1,12 @@
 import React, {Component} from 'react'
-import List from './components/List'
+import Heading from './components/Heading'
+import './styles.css'
 
 class App extends Component {
 render(){
   return (
     <div>
-      <List/>
+      <Heading/>
     </div>
   )
 }

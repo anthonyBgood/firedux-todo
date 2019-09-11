@@ -1,26 +1,44 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import {completeToDo} from  '../actions'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTrashAlt, faCheck } from '@fortawesome/free-solid-svg-icons'
 
 class ListItem extends Component {
 
-  handleComplete = completeTodo => {
+  handleComplete = todoId => {
     const {completeToDo} = this.props;
-    completeToDo(completeTodo);
+    completeToDo(todoId);
   };
 
   render() {
-    const{todoId, todo} = this.props;
+    const{ key, todoId, todo} = this.props;
     return (
-      <div key="toDoName">
-        <h4>
-          {todo.title}
-          <span onClick={() => this.handleComplete(todoId)}>
-            <i>Done</i>
-          </span>
-          
-        </h4>
-      </div>
+
+      <tr  key={key}>
+        <td>
+          <button 
+            class="button-error pure-button"
+            type="button"
+            onClick={() => this.handleComplete(todoId)}>
+            <FontAwesomeIcon icon={faTrashAlt} />          
+          </button> 
+        </td>
+        <td>{todo.title}</td>
+        <td>
+          <button 
+            class="button-small button-success pure-button"
+            onClick={() => this.handleComplete(todoId)}>
+            <FontAwesomeIcon icon={faCheck} />
+          </button> 
+        </td>
+      </tr>
+
+
+
+
+
+
     );
   }
 }
