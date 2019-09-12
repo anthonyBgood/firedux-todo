@@ -6,6 +6,9 @@ import ListItem from './ListItem';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlus } from '@fortawesome/free-solid-svg-icons'
 
+import { STATUS_UNDERWAY } from '../actions'
+
+
 
 class List extends Component {
   state = {
@@ -30,12 +33,13 @@ class List extends Component {
     const {formValue} = this.state;
     const {addToDo} = this.props;
     
+    // TODO: don't submit blank, add a notification
     if (formValue){
       addToDo({
         title: formValue, 
-        timeCreated: Date.now(), 
-        done: false, 
-      });
+        timestamp: Date.now(), 
+        status: STATUS_UNDERWAY, 
+      })
 
       this.setState({formValue: ""});
     }

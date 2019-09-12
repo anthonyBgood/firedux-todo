@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
-import {completeToDo} from  '../actions'
+import {completeToDo, trashToDo} from  '../actions'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTrashAlt, faCheck } from '@fortawesome/free-solid-svg-icons'
 
@@ -9,6 +9,11 @@ class ListItem extends Component {
   handleComplete = todoId => {
     const {completeToDo} = this.props;
     completeToDo(todoId);
+  };
+
+  handleTrashTodo = todoId => {
+    const {trashToDo} = this.props;
+    trashToDo(todoId);
   };
 
   render() {
@@ -20,7 +25,7 @@ class ListItem extends Component {
           <button 
             class="button-error pure-button"
             type="button"
-            onClick={() => this.handleComplete(todoId)}>
+            onClick={() => this.handleTrashTodo(todoId)}>
             <FontAwesomeIcon icon={faTrashAlt} />          
           </button> 
         </td>
@@ -43,4 +48,4 @@ class ListItem extends Component {
   }
 }
 
-export default connect(null, {completeToDo}) (ListItem)
+export default connect(null, {completeToDo, trashToDo}) (ListItem)

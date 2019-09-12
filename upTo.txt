@@ -7,7 +7,7 @@ comleted tutorial
 
 need to:
 
-workout how to amend the firebase records (update done, ect)
+change the database calls into  into actions
 authenticate users (and a guest)
 group uses to share a todo list
 

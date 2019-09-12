@@ -8,7 +8,6 @@ const config = {
       projectId: "firedux-todo-eecec",
       storageBucket: "",
       messagingSenderId: "86181431112",
-      // not stipulated in the tutorial appId:
       appId: "1:86181431112:web:d59f4b0b618f24df7ad57d"
     };
 
