@@ -5,10 +5,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Part of my self lead discovery  of implementing firebase with react 
 
 ## source
-following along with a tutorial at:
+i started with tutorial at:
 
 https://blog.bitsrc.io/building-a-todo-app-in-react-with-firebase-and-redux-ba3ab53a671b
 
+I have moved on from here, following the ideas in buildPath.md
 
 
 # Create React App boiler plate readme text...

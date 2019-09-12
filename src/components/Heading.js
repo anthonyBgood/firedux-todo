@@ -21,7 +21,7 @@ render(){
           </div>
           <div class="pure-u-1-24"></div>
       </div>
-      <div class='header'></div>
+      <div class='footer'></div>
     </div>
     
     

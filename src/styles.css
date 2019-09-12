@@ -1,5 +1,6 @@
 
-.header {
+.header,
+.footer {
   margin: 0;
   color: #fd8504;
   background-color: #100e17;
@@ -8,8 +9,14 @@
       padding-right: 2em;
       padding-left: 2em;
       padding-bottom: 2em;
-  border-bottom: 1px solid #fd8504;
+  border-bottom: 2px solid #fd8504;
 }
+
+.footer {
+  border-top: 2px solid #fd8504;
+}
+
+
 
 .content{
 
